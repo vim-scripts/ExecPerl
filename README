@@ -1,0 +1,30 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=281
+
+Provides the following commands:
+
+:ExecPerl script_name
+	This will execute script_name using the perl
+	interpreter.
+
+:ExecPerlMore
+	This will execute script_name using the perl
+	interpreter.  If the output would scroll past the end
+	of the screen, execution pauses and waits for a
+	keystroke before continuing.
+
+:ExecPerlDump
+	This will ask you for an output file and then
+	execute script_name using the perl interpreter.  The
+	output from the script is dumped to the file that you
+	entered when you were prompted.  You may press enter
+	instead of entering a file name to accept the default
+	filename.
+
+Also, The following keys are mapped by default.  You'll have to
+comment them if you don't want this behavior:
+
+	<F5>:    ExecPerl the current file being edited
+	<C-F5>:  ExecPerlMore the current file being edited
+	<S-F5>:  ExecPerlDump the current file being edited
+
+
